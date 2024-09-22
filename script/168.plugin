@@ -1,0 +1,6 @@
+[rewrite_local] 
+^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/Yunxingz/Rewrite/refs/heads/main/168qingduanshi.js
+
+
+[mitm] 
+hostname = buy.itunes.apple.com 
