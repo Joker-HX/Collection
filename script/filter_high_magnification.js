@@ -1,7 +1,7 @@
 function operator(proxies) {
     let arr = [];
     proxies.forEach((e) => {
-    const match = e.name.match(/\b(\d+(\.\d+)?)x\b/g);
+    const match = e.name.match(/\b(\d+(\.\d+)?)(x|X)\b/g);
     if (match) {
     const rev = match[0].match(/(\d[\d.]*)/)[0];
     const revFloat = parseFloat(rev);
